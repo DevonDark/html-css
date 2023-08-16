@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-color: cornflowerblue; font-family: fantasy; font-size: 20px;
+   }
+   h1 {
+    color: rgb(237, 245, 238);
+    background-color: black;
+   }
+   h2 {color: brown;}
+   p {text-align: justify;}
