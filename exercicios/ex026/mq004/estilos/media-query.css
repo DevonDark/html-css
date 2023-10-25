@@ -2,6 +2,144 @@
 
 /* Todas as demais mídias */
 
+/*Typical Device Breakpoints
+ 2023
+ Móvel: 360 x 640
+Móvel: 375 x 667
+Móvel: 360 x 720
+iPhoneX: 375x812
+Pixel 2: 411x731
+Tábua: 768 x 1024
+Computador portátil: 1366 x 768
+Laptop ou desktop de alta resolução: 1920 x 1080
+
+
+
+
+
+
+*/
+
+
+
 @media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /*desnecessário*/
+        
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {
+        display: none;
+    }
     
+    img#tablet {display: none;}
+    
+    img#print {
+        display: block;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*TABLET*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {display: block;}
+    
+    img#print {
+        display: none;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) { /*DESKTOP*/
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {display: none;}
+    
+    img#print {
+        display: none;
+    }
+    
+    img#pc {
+        display: block;
+    }
+    
+    img#tv {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1920px) { /* GRANDES TELAS */
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {display: none;}
+    
+    img#print {
+        display: none;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: block;
+    }
+
 }
